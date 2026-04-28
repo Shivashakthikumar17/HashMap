@@ -1,0 +1,15 @@
+import java.util.HashMap;
+
+public class HashMapBasics {
+    public static void main(String[] args) {
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "Hash");
+        map.put(2, "Map");
+        map.put(null, "Test program");
+        System.out.println(map); //print entire map
+        System.out.println(map.get(2)) ; //get the value for the key 2
+       for(var e : map.entrySet()) {
+            System.out.println(e.getKey() + " : " + e.getValue());
+        }
+    }
+}
